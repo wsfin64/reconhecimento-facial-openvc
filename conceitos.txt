@@ -1,0 +1,61 @@
+
+VISÃO COMPUTACIONAL
+
+Visão computacional simula a capacidade do olho humano
+
+------------------------------------------------------
+
+DETECÇÃO X RECONHECIMENTO
+
+- Detecção é apenas quando o algoritimo identifica uma face humana, e demarca a área da face, seja em uma imagem ou vídeo.
+
+- Reconhecimento além de detectar a face, ele identifica de quem é aquela face.
+
+-----------------------------------------------------
+
+APLICAÇÕES
+
+- Detecção
+	-Contar quantas pessoas estão no ambiente
+	- Alarmes
+	- Controle de tráfego em rodovias
+	- Obter o tamanho de um objeto
+	- Detecção de sorrisos em câmeras/ajuste de foco
+
+
+- Reconhecimento
+	- Desbloqueio do celular
+	- Sistemas de segurança
+	- Validação em cursos online
+	- Identificar criminosos
+
+
+------------------------------------------------------
+
+
+ALGORITMOS
+
+	- Eigenfaces
+	- Fisherfaces
+	- LBPH (Local Binary Patterns Histograms)
+
+
+------------------------------------------------------
+
+ETAPAS PARA O RECONHECIMENTO
+
+	- Detectar de faces
+	- Coletar as fotos
+	- Treinar
+	- Reconhecer
+
+-----------------------------------------------------
+
+FERRAMENTAS
+
+	- Python (min versão 3.6)
+	- numpy (pip install numpy)
+	- OpenCV (unofficial windows binaries for python extension packages) https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+-----------------------------------------------------
+
