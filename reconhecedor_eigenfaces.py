@@ -1,6 +1,6 @@
 import cv2
 
-camera = cv2.VideoCapture(r"C:\FFOutput\kristel3.mp4")
+camera = cv2.VideoCapture(r"C:\FFOutput\kristel5.mp4")
 
 detector_facial = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 

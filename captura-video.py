@@ -2,12 +2,12 @@
 import cv2
 
 # Reference your video file saved on your hard drive (mp4 format)
-cap = cv2.VideoCapture(r"C:\FFOutput\ines1.mp4")
+cap = cv2.VideoCapture(r"C:\FFOutput\001.mp4")
 classificador = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 classificadorOlho = cv2.CascadeClassifier("haarcascade_eye.xml")
 
-amostra = 51
-numero_amostra = 100
+amostra = 1
+numero_amostra = 50
 id = input('Digite o seu identificador: ')
 largura, altura = 220, 220
 
