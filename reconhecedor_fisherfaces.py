@@ -1,11 +1,11 @@
 import cv2
 
-camera = cv2.VideoCapture(r"C:\FFOutput\kristel3.mp4")
+camera = cv2.VideoCapture(r"C:\FFOutput\kristel4.mp4")
 
 detector_facial = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
-reconhecedor = cv2.face.EigenFaceRecognizer_create()
-reconhecedor.read("classficadorEigen.yml")
+reconhecedor = cv2.face.FisherFaceRecognizer_create()
+reconhecedor.read("classificadorFisher.yml")
 
 largura, altura = 220, 220
 font = cv2.FONT_HERSHEY_COMPLEX_SMALL
@@ -14,7 +14,7 @@ while True:
     conectado, imagem = camera.read()
 
     imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
-    faces_detectadas = detector_facial.detectMultiScale(imagem_cinza, scaleFactor=1.2, minSize=(100, 100))
+    faces_detectadas = detector_facial.detectMultiScale(imagem_cinza, scaleFactor=1.3, minSize=(100, 100))
 
     for x, y, l, a in faces_detectadas:
         imagem_face = cv2.resize(imagem_cinza[y:y + a, x:x + l], (largura, altura))
